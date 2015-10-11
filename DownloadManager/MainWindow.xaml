@@ -1,0 +1,17 @@
+﻿<Window x:Class="DownloadManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="569.776" Closing="Window_Closing">
+    <Grid>
+        <TextBox Name="from" HorizontalAlignment="Left" Height="23" Margin="60,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="492"/>
+        <Label Content="from : " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="to : " HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="60,47,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="10,82,0,5" Width="542" Background="Gray" HorizontalAlignment="Left">
+            <WrapPanel Name="stackPanel" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="525"/>
+        </ScrollViewer>
+        <Frame Content="Frame" HorizontalAlignment="Left" Height="100" Margin="110,-24,0,0" VerticalAlignment="Top" Width="100" Navigated="Frame_Navigated"/>
+
+
+    </Grid>
+</Window>
